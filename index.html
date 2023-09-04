@@ -22,14 +22,15 @@
 </head>
 
 <body class="container mx-auto bg-gray-100 font ">
-    <section class="stopwatch flex justify-center items-center h-[100vh] ">
+    <section class="stopwatch flex justify-center items-center h-[90vh] flex-col gap-10">
+        <h1 class="text-4xl mt-5 text-center bg-gradient-to-r from-violet-500 to-fuchsia-500 text-transparent bg-clip-text">Stopwatch</h1>
         <div
-            class="md:w-[60%] flex justify-center items-center flex-col p-20 gap-16 w-11/12 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-xl">
-            <h1 id="display-time" class="text-white max-w-xl text-3xl md:text-6xl font-medium text-center w-full">00 : 00 : 00</h1>
-            <div class="text-2xl md:text-3xl flex gap-5 mt-5">
-                <i onclick="stopWatchPause()" class="fa-solid fa-circle-pause fa-2xl cursor-pointer " style="color: #ffffff;"></i>
-                <i onclick="stopWatchStart()" class="fa-solid fa-circle-play fa-2xl cursor-pointer" style="color: #ffffff;"></i>
-                <i onclick="stopWatchReset()" class="fa-solid fa-rotate-right fa-2xl cursor-pointer" style="color: #ffffff;"></i>
+            class="md:w-[60%] flex justify-center items-center flex-col px-5 py-16 gap-12 w-11/12 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-xl">
+            <h1 id="display-time" class="text-white max-w-xl text-5xl md:text-6xl font-medium text-center flex-1">00 : 00 : 00</h1>
+            <div class="gap-5 mt-5 flex items-center">
+                <i onclick="stopWatchPause()" class="text-5xl fa-solid fa-circle-pause fa-2xl cursor-pointer " style="color: #ffffff;"></i>
+                <i onclick="stopWatchStart()" class="text-7xl fa-solid fa-circle-play fa-beat-fade fa-2xl" style="color: #fff;"></i>
+                <i onclick="stopWatchReset()" class=" text-5xl fa-solid fa-rotate-right fa-2xl cursor-pointer" style="color: #ffffff;"></i>
             </div>
         </div>
     </section>
